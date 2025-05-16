@@ -1,0 +1,5 @@
+.content {
+  margin: 20px 40px; /* 上下40px、左右は中央寄せ */
+  max-width: none;
+  padding: 0 1em;
+}

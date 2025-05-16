@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>学勢調査2024</title>
+  <link rel="stylesheet" href="../../_commons/styles.css">
+  <link href="../../_commons/titles.css" rel="stylesheet"/>
+  <link href="../../_header/header.css" rel="stylesheet"/>
+  <link href="../../_footer/footer.css" rel="stylesheet"/>
+  <link href="content.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../../_commons/common.js"></script>
+</head>
+<body>
+
+  <div id="header"></div>
+
+  <main class="content">
+    <h1>設問一覧</h1>
+    <table>
+	<tr>
+		<td>ジャンル名</td>
+		<td>ジャンルNo</td>
+		<td>設問番号<br>（ジャンル別）</td>
+		<td>設問番号<br>（通し）</td>
+		<td>質問内容</td>
+		<td>回答方式</td>
+		<td>回答者</td>
+		<td>選択肢内容</td>
+		<td>質問内容（英語）</td>
+		<td>選択肢内容（英語）</td>
+	</tr>
+	<tr>
+		<td>基本</td>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+		<td>現在あなたの所属している課程を教えてください。</td>
+		<td>選択</td>
+		<td>全員</td>
+		<td>学士課程<br>大学院修士課程<br>大学院博士後期課程<br>専門職学位課程<br>研究生<br>科目等履修生</td>
+		<td>What is your current status at Tokyo Tech?</td>
+		<td>Bachelor's degree student<br>Master's degree student<br>Doctoral degree student<br>Professional master's degree student<br>Research student<br>Non Degree Students<br>Other</td>
+	</tr>
+	<tr>
+		<td>基本</td>
+		<td>1</td>
+		<td>2</td>
+		<td>2</td>
+		<td>あなたの受験方式を教えてください。</td>
+		<td>選択+自由記述</td>
+		<td>全員</td>
+		<td>一般選抜（前期日程）<br>一般選抜（後期日程）<br>学校推薦型選抜（推薦入試も含む）<br>総合型選抜（一般枠）（～2023年度総合型選抜、AO入試も含む）<br>総合型選抜（女子枠）<br>私費留学生<br>国費留学生<br>高大連携入試<br>編入生<br>その他</td>
+		<td>What was your path to admission?</td>
+		<td>General selection (first round)<br>General selection (second round)<br>School recommendation selection (including entrance exam for recommended candidates)<br>Comprehensive selection (general), including those who enrolled via the comprehensive selection exam in 2023 or before, and Admissions Office exam<br>Comprehensive selection (Female only quota)<br>Privately funded student<br>MEXT Scholarship student<br>High school-university collaboration entrance exam<br>Transfer student<br>Other(please specify)</td>
+	</tr>
+	<tr>
+		<td>基本</td>
+		<td>1</td>
+		<td>3</td>
+		<td>3</td>
+		<td>現課程への入学年度を教えてください。</td>
+		<td>選択</td>
+		<td>全員</td>
+		<td>2024<br>2023<br>2022<br>2021<br>2020<br>2019<br>2018<br>2017<br>2016以前</td>
+		<td>Year enrolled in your current program.</td>
+		<td>2024<br>2023<br>2022<br>2021<br>2020<br>2019<br>2018<br>2017<br>2016 or before</td>
+	</tr>
+	<tr>
+		<td>基本</td>
+		<td>1</td>
+		<td>4</td>
+		<td>4</td>
+		<td>以下に該当する方はチェックを入れてください。（複数選択可）</td>
+		<td>複数選択</td>
+		<td>全員</td>
+		<td>高専や他大学に在籍していたことがある<br>留学生である</td>
+		<td>Check the items that app|y.</td>
+		<td>I have attended other technical colleges or universities.<br>I am an international student.</td>
+	</tr>
+	<tr>
+		<td>基本</td>
+		<td>1</td>
+		<td>5</td>
+		<td>5</td>
+		<td>あなたの所属する学院を教えてください。</td>
+		<td>選択</td>
+		<td>全員</td>
+		<td>理学院<br>工学院<br>物質理工学院<br>情報理工学院<br>生命理工学院<br>環境・社会理工学院<br>その他（自由記述）</td>
+		<td>Which school are you affiliated with?</td>
+		<td>School of Science<br>School of Engineering<br>School of Material and Chemical Technology<br>School of Computing<br>School of Life Science and Technology<br>School of Environment and Society<br>Other (please specify)</td>
+	</tr>
+	<tr>
+		<td>基本</td>
+		<td>1</td>
+		<td>6</td>
+		<td>6</td>
+		<td>あなたの所属する系を教えてください。</td>
+		<td>リスト</td>
+		<td>全員</td>
+		<td>系に所属していない<br>数学系<br>物理学系<br>化学系<br>地球惑星科学系<br>機械系<br>システム制御系<br>電気電子系<br>情報通信系<br>経営工学系<br>材料系<br>応用化学系<br>数理・計算科学系<br>情報工学系<br>生命理工学系<br>建築学系<br>土木・環境工学系<br>融合理工学系<br>社会・人間科学系<br>イノベーション科学系</td>
+		<td>Which department are you affiliated with?</td>
+		<td>Not affiliated with a department<br>Department of Mathematics<br>Department of Physics<br>Department of Chemistry<br>Department of Earth and Planetary Sciences<br>Department of Mechanical Engineering<br>Department of Systems and Control Engineering<br>Department of Electrical and Electronic Engineering<br>Department of Information and Communications Engineering<br>Department of Industrial Engineering and Economics<br>Department of Materials Science and Engineering<br>Department of Chemical Science and Engineering<br>Department of Mathematical and Computing Science<br>Department of Computer Science<br>Department of Life Science and Technology<br>Department of Architecture and Building Engineering<br>Department of Civil and Environmental Engineering<br>Department of Transdisciplinary Science and Engineering<br>Department of Social and Human Sciences<br>Department of Innovation Science</td>
+	</tr>
+	<tr>
+		<td>基本</td>
+		<td>1</td>
+		<td>7</td>
+		<td>7</td>
+		<td>あなたの所属するコース・課程を教えてください。</td>
+		<td>リスト</td>
+		<td>全員</td>
+		<td>コースに所属していない<br>数学コース<br>物理学コース<br>化学コース<br>地球惑星科学コース<br>機械コース<br>システム制御コース<br>電気電子コース<br>情報通信コース<br>経営工学コース<br>材料コース<br>応用化学コース<br>数理・計算科学コース<br>情報工学コース<br>生命理工学コース<br>建築学コース<br>土木工学コース<br>地球環境共創コース<br>社会・人間科学コース<br>イノベーション科学コース<br>エネルギーコース<br>エネルギー・情報コース<br>エンジニアリングデザインコース<br>ライフエンジニアリングコース<br>原子核工学コース<br>知能情報コース<br>都市・環境学コース<br>地球生命コース<br>技術経営専門職学位課程</td>
+		<td>Which graduate major and program are you in?</td>
+		<td>No major<br>Graduate Major in Mathematics<br>Graduate Major in Physics<br>Graduate Major in Chemistry<br>Graduate Major in Earth and Planetary Sciences<br>Graduate Major in Mechanical Engineering<br>Graduate Major in Systems and Control Engineering<br>Graduate Major in Electrical and Electronic Engineering<br>Graduate Major in Information and Communications Engineering<br>Graduate Major in Industrial Engineering and Economics<br>Graduate Major in Materials Science and Engineering<br>Graduate Major in Chemical Science and Engineering<br>Graduate Major in Mathematical and Computing Science<br>Graduate Major in Computer Science<br>Graduate Major in Life Science and Technology<br>Graduate Major in Architecture and Building Engineering<br>Graduate Major in Civil Engineering<br>Graduate Major in Global Engineering for Development, Environment and Society<br>Graduate Major in Social and Human Sciences<br>Graduate Major in Innovation Science<br>Graduate Major in Energy Science and Engineering<br>Graduate Major in Energy Science and Informatics<br>Graduate Major in Engineering Sciences and Design<br>Graduate Major in Human Centered Science and Biomedical Engineering<br>Graduate Major in Nuclear Engineering<br>Graduate Major in Artificial Intelligence<br>Graduate Major in Urban Design and Built Environment<br>Graduate Major in Earth-Life Science<br>Graduate Major in Technology and Innovation Management</td>
+	</tr>
+	<tr>
+		<td>基本</td>
+		<td>1</td>
+		<td>8</td>
+		<td>8</td>
+		<td>性別を教えてください。</td>
+		<td>選択</td>
+		<td>全員</td>
+		<td>男性<br>女性<br>回答しない</td>
+		<td>Gender</td>
+		<td>Male<br>Female<br>Rather not specify</td>
+	</tr>
+	<tr>
+		<td>大学生活</td>
+		<td>2</td>
+		<td>1</td>
+		<td>9</td>
+		<td>キャンパスでの主な活動場所を教えてください。</td>
+		<td>選択</td>
+		<td>全員</td>
+		<td>大岡山地区（東地区, 西地区, 南地区, 北地区）<br>緑が丘地区<br>石川台地区<br>すずかけ台キャンパス<br>田町キャンパス</td>
+		<td>In which area of campus do you spend much time of yours?</td>
+		<td>Ookayama area (North, South, East or West)<br>Midorigaoka area<br>Ishikawadai area<br>Suzukakedai campus<br>Tamachi campus</td>
+	</tr>
+	<tr>
+		<td>大学生活</td>
+		<td>2</td>
+		<td>2</td>
+		<td>10</td>
+		<td>サークル等の課外活動について、参加しているものがあれば教えてください。（複数選択可）</td>
+		<td>複数選択+自由記述</td>
+		<td>全員</td>
+		<td>部活<br>サークル<br>その他の学生団体による活動<br>なし<br>その他（自由記述）</td>
+		<td>What extracurricular activities, if any, do you participate in (multiple selections allowed) ?</td>
+		<td>School clubs<br>Student clubs<br>Other student organizations<br>Other (please specify)<br>None</td>
+	</tr>
+	<tr>
+		<td>学修</td>
+		<td>3</td>
+		<td>1</td>
+		<td>11</td>
+		<td>東工大（科学大）がどのような人材を育成していくべきかについて教えてください。（複数選択可）</td>
+		<td>複数選択+自由記述</td>
+		<td>全員</td>
+		<td>グローバルな人材<br>専門力を持つ人材<br>理工系全域の見地を持った人材<br>文理融合型の人材<br>リーダーシップのある人材<br>就職に強い人材<br>その他（自由記述）</td>
+		<td>Please tell us what kinds of human resources Tokyo Tech (Institute of Science Tokyo) should develop. (multiple selections allowed)</td>
+		<td>Global talent<br>People with expertise and professional skills<br>People with insight into matters related to science and technology<br>People who can combine the humanities and sciences<br>People with leadership skills<br>People with skills useful for finding employment<br>Others (please describe)</td>
+	</tr>
+	<tr>
+		<td>学修</td>
+		<td>3</td>
+		<td>2</td>
+		<td>12</td>
+		<td>本学に進学した理由を教えてください。（複数選択可）</td>
+		<td>複数選択+自由記述</td>
+		<td>全員</td>
+		<td>研究<br>専門を極める<br>教養を身につける<br>就職<br>人脈<br>サークルや部活などの課外活動<br>やりたいことを見つける<br>すぐに社会に出たくなかった<br>周りの人に影響された<br>その他（自由記述）</td>
+		<td>Please indicate your reasons for attending the Institute. （for Professional skills, employment,overall competence, etc） (multiple selections allowed)</td>
+		<td>for Research<br>mastering a specialty<br>acquiring education<br>finding a job<br>networking<br>extracurricular activities such as clubs and activities<br>finding what I want to do<br>didn't want to go out into the world right away<br>influenced by people around me<br>other (please describe)</td>
+	</tr>
+	<tr>
+		<td>学修</td>
+		<td>3</td>
+		<td>3</td>
+		<td>13</td>
+		<td>東工大生としてプライドを持っていますか。</td>
+		<td>選択</td>
+		<td>全員</td>
+		<td>しっかり持っている<br>持っている<br>少し持っている<br>あまり持っていない</td>
+		<td>Are you proud to be a Tokyo Tech student?</td>
+		<td>Yes, absoluteIy<br>Yes, somewhat<br>Yes, sort of<br>No, not at all</td>
+	</tr>
+	<tr>
+		<td>学修</td>
+		<td>3</td>
+		<td>4</td>
+		<td>14</td>
+		<td>教養科目(理工系教養科目、文系教養科目、英語科目、第二外国語科目、日本語・日本文化科目、広域教養科目、教職科目、キャリア科目（2023年度まで）、アントレプレナーシップ科目（2024年度以降）)への意見があれば教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please let us know if you have any opinions about the liberal arts courses (Basic Science and Technology Courses, Humanities and Social Science Courses, English Language Courses, Second Foreign Language Courses, Japanese Language and Culture Courses, Breadth Courses, Teacher Education Courses, Career Development Courses) (until AY 2023), and/or entrepreneurship courses (from AY 2024). (Maximum 1250 words)</td>
+	</tr>
+	<tr>
+		<td>学修</td>
+		<td>3</td>
+		<td>5</td>
+		<td>15</td>
+		<td>現在在籍している系・コース等の授業・制度への意見があれば教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please let us know if you have opinions about classes and systems of your current department, graduate major, etc. (Maximum 1250 words)</td>
+	</tr>
+	<tr>
+		<td>学修</td>
+		<td>3</td>
+		<td>6</td>
+		<td>16</td>
+		<td>学士課程の研究室所属について意見があれば教えてください。（2000字以内）<br>例：時期、研究室プロジェクト、研究室決定方法、B2D</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please let us know if you have any opinions about laboratory affiliations during bachelor’s degree programs. (Maximum 1250 words)<br>Example: Timing, laboratory projects, method for deciding laboratories, B2D</td>
+	</tr>
+	<tr>
+		<td>学修</td>
+		<td>3</td>
+		<td>7</td>
+		<td>17</td>
+		<td>英語で開講される科目について意見があれば教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please let us know if you have any opinions about classes taught in English. (Maximum 1250 words)</td>
+	</tr>
+	<tr>
+		<td>学修</td>
+		<td>3</td>
+		<td>8</td>
+		<td>18</td>
+		<td>授業の録画配信について意見があれば教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please let us know if you have any opinions about the streaming of recorded class videos. (Maximum 1250 words)</td>
+	</tr>
+	<tr>
+		<td>学修</td>
+		<td>3</td>
+		<td>9</td>
+		<td>19</td>
+		<td>以下の教育プログラムの中で参加したい、参加している、または参加していたものがあれば教えてください。（複数選択可）</td>
+		<td>複数選択+自由記述</td>
+		<td>全員</td>
+		<td>四大学連合複合領域コース<br>グローバル理工人育成コース（アントレプレナーシップ教育グローバル教育オプション科目の履修）<br>データサイエンス・AI全学教育プログラム<br>リベラルアーツ探究プログラム<br>Tokyo Tech Summer Program<br>Tokyo Tech Winter Program<br>B2Dスキーム<br>リーディング大学院<br>リーダーシップ教育課程<br>物質・情報卓越教育課程<br>超スマート社会卓越教育課程<br>エネルギー・情報卓越教育課程<br>日中韓新先進科学技術4大学（T2KN）共同教育プログラム（キャンパスアジア＋（プラス））<br>清華大学との大学院合同プログラム<br>その他（自由記述）</td>
+		<td>Please tell us if you wish to participate, are participating, or was participating with any of the following education programs. (multiple selections allowed)</td>
+		<td>Multidisciplinary Program of the Confederation of the Four Universities<br>Global Scientists and Engineers Course (Entrepreneurship Education Global Education Option Course)<br>University-Wide Education Program in Data Science and Artificial Intelligence<br>Liberal Arts Exploration Program<br>Tokyo Tech Summer Program<br>Tokyo Tech Winter Program<br>B2D Scheme<br>Leading Graduate Schools<br>Tokyo Tech Academy for Leadership (ToTAL) program<br>Tokyo Tech Academy for Convergence of Materials and Informatics (TAC-MI) program<br>Tokyo Tech Academy for Super Smart Society Program (WISE-SSS)<br>Tokyo Tech Academy of Energy and Informatics Program<br>Joint Education and Research Programs of Top Asian Science and Engineering Universities (T2KN) (CAMPUS Asia Plus)<br>Tokyo Tech-Tsinghua University Joint Graduate Program<br>Others (please describe)</td>
+	</tr>
+	<tr>
+		<td>学修</td>
+		<td>3</td>
+		<td>10</td>
+		<td>20</td>
+		<td>前問で選んだものに対して、参加したい、参加している、または参加していた理由を教えてください。（2000字以内）<br>記入例<br>グロ理：<br>DSAI：</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please tell us why you would like to participate, are participating, or have participated in the program you selected in the previous question. (Maximum 1250 words)<br>Example: GSEC, DSAI</td>
+	</tr>
+	<tr>
+		<td>学修</td>
+		<td>3</td>
+		<td>11</td>
+		<td>21</td>
+		<td>進学予定について、以下のうちあてはまるものを選んでください。</td>
+		<td>選択</td>
+		<td>全員</td>
+		<td>博士後期課程まで進学する予定である（進学している）<br>修士課程まで進学する予定である（進学している）<br>学士課程で卒業する予定である<br>まだ決まっていない</td>
+		<td>Please select the following that apply to your plans for higher education.</td>
+		<td>I am a master's student planning to advance to a doctoral program at the Institute / I am a doctoral student.<br>I am a bachelor's student planning to advance to a master's program at the Institute / I am a master's student planning to leave the Institute once I obtain my degree.<br>I am a bachelor's student planning to leave the Institute once I obtain my degree.<br>Undecided</td>
+	</tr>
+	<tr>
+		<td>学修</td>
+		<td>3</td>
+		<td>12</td>
+		<td>22</td>
+		<td>本学での修士課程進学を選択しないのはなぜですか。（複数選択可）</td>
+		<td>複数選択+自由記述</td>
+		<td>学士課程で卒業予定の方</td>
+		<td>経済的理由<br>早く社会に出たい<br>今学んでいる分野を極めたいと思わない<br>国内の他大学に進学したい<br>海外の大学院に進学したい<br>研究に興味がない<br>その後の進路が不安<br>英語で講義が行われるから<br>その他（自由記述）</td>
+		<td>If you are not planning to advance to a doctoral program at the Institute, please indicate the reasons why.(multiple selections allowed)</td>
+		<td>Financial reasons.<br>I want to begin work.<br>I am not interested in pursuing my current field of study.<br>I would like to enroll in another local university.<br>I would like to pursue postgraduate studies abroad.<br>I am not interested in research.<br>I am concerned about my future career.<br>The courses are conducted in English.<br>Other (please specify)</td>
+	</tr>
+	<tr>
+		<td>学修</td>
+		<td>3</td>
+		<td>13</td>
+		<td>23</td>
+		<td>修士課程に進学した、または進学希望なのはなぜですか。</td>
+		<td>選択+自由記述</td>
+		<td>修士課程の方/修士課程進学希望者</td>
+		<td>研究したいテーマがあるから<br>実験がしたかったから<br>就活のため<br>まだ学生でいたいから<br>周りの学生の多くも進学するから<br>なんとなく<br>その他（自由記述）</td>
+		<td>Why did you/would you want to enter a master’s program? (multiple selections allowed)</td>
+		<td>I have a theme I want to research<br>I wanted to do experiments<br>For job hunting<br>I still want to be a student<br>Many students around me are also going on to higher education<br>No special reason<br>Other (please specify)</td>
+	</tr>
+	<tr>
+		<td>学修</td>
+		<td>3</td>
+		<td>14</td>
+		<td>24</td>
+		<td>本学での博士後期課程進学を選択しないのはなぜですか。（複数選択可）</td>
+		<td>複数選択+自由記述</td>
+		<td>修士課程の方/修士課程進学希望者</td>
+		<td>経済的理由<br>早く社会に出たい<br>今学んでいる分野を極めたいと思わない<br>国内の他大学に進学したい<br>海外の大学院に進学したい<br>研究に興味がない<br>その後の進路が不安<br>英語で講義が行われるから<br>その他（自由記述）</td>
+		<td>If you are not planning to advance to a doctoral program at the Institute, please indicate the reasons why. (multiple selections allowed)</td>
+		<td>Financial reasons.<br>I want to begin work.<br>I am not interested in pursuing my current field of study.<br>I would like to enroll in another local university.<br>I would like to pursue postgraduate studies abroad.<br>I am not interested in research.<br>I am concerned about my future career.<br>The courses are conducted in English.<br>Other (please specify)</td>
+	</tr>
+	<tr>
+		<td>学修</td>
+		<td>3</td>
+		<td>15</td>
+		<td>25</td>
+		<td>博士後期課程に進学した、または進学希望である理由を教えてください。</td>
+		<td>選択+自由記述</td>
+		<td>博士後期課程の方/博士後期課程進学希望者</td>
+		<td>研究したいテーマがあるから<br>実験がしたかったから<br>就活のため<br>なんとなく<br>その他（自由記述）</td>
+		<td>Why did you/would you want to enter a doctoral program?(multiple selections allowed)</td>
+		<td>I have a theme I want to research<br>I wanted to do experiments<br>For job hunting<br>No special reason<br>Other (please specify)</td>
+	</tr>
+	<tr>
+		<td>学修サービス</td>
+		<td>4</td>
+		<td>1</td>
+		<td>26</td>
+		<td>あなたは留学したことがありますか。</td>
+		<td>選択</td>
+		<td>日本人学生</td>
+		<td>本学入学前と本学在学中どちらも留学したことがある<br>本学在学中に留学したことがある<br>本学入学前に留学したことがある<br>留学したことはない</td>
+		<td>Have you ever studied abroad?</td>
+		<td>Yes, both before and after enrolling at Tokyo Tech.<br>Yes, after enrolling at Tokyo Tech.<br>Yes, before enrolling at Tokyo Tech.<br>No, I have not.</td>
+	</tr>
+	<tr>
+		<td>学修サービス</td>
+		<td>4</td>
+		<td>2</td>
+		<td>27</td>
+		<td>あなたは本学以外に留学したことがありますか。</td>
+		<td>選択</td>
+		<td>留学生</td>
+		<td>本学入学前と本学在学中どちらも留学したことがある<br>本学在学中に留学したことがある<br>本学入学前に留学したことがある<br>留学したことはない</td>
+		<td>Have you ever studied abroad at another university or college?</td>
+		<td>Yes, both before and after enrolling at Tokyo Tech.<br>Yes, after enrolling at Tokyo Tech.<br>Yes, before enrolling at Tokyo Tech.<br>No, I have not.</td>
+	</tr>
+	<tr>
+		<td>学修サービス</td>
+		<td>4</td>
+		<td>3</td>
+		<td>28</td>
+		<td>在学中に留学したいと思いますか。</td>
+		<td>選択+自由記述</td>
+		<td>全員</td>
+		<td>既に具体的な計画がある<br>積極的にしたいと思う<br>機会があればしたいと思う<br>したいと思わない<br>その他（自由記述）</td>
+		<td>Do you wish to study abroad while enrolled at Tokyo Tech?</td>
+		<td>Yes, I already have plans to do so.<br>Yes, I am actively working to do so.<br>Yes, if I have the chance.<br>No.<br>Others (please describe)</td>
+	</tr>
+	<tr>
+		<td>学修サービス</td>
+		<td>4</td>
+		<td>4</td>
+		<td>29</td>
+		<td>留学をしようと思ったきっかけを教えてください。（複数選択可）<br>※アントレプレナーシップ教育グローバル教育オプション科目はGEOと表記します。</td>
+		<td>複数選択+自由記述</td>
+		<td>留学生</td>
+		<td>「海外留学の手引き」を見て<br>東工大が主催のイベント<br>東工大の学生団体が主催のイベント<br>東工大以外が主催のイベント<br>グローバル理工人育成コース、GEOの授業<br>グローバル理工人育成コース、GEOでの超短期派遣<br>奨学金制度に採択されたため<br>国内外での学会参加<br>大学の授業（グローバル理工人育成コース、GEOの授業以外）への参加<br>その他（自由記述）</td>
+		<td>Please tell us why you decided to study abroad. (multiple selections allowed)<br>Note: The Global Education Option Course of Entrepreneurship Education is abbreviated as GEO.</td>
+		<td>I read the Guide to Study Abroad for Tokyo Tech Students<br>I attended a Tokyo Tech-sponsored event<br>I attended a Tokyo Tech student organization-sponsored event<br>I attended an event sponsored by other organizations<br>Global Scientists and Engineers Course, GEO classes<br>Global Scientists and Engineers Course, GEO super-short-term study abroad program<br>I was chosen for a scholarship program<br>Attended an academic conference (both in Japan or abroad)<br>Attended a university class (other than Global Scientists and Engineers Course and GEO)<br>Others (please describe)</td>
+	</tr>
+	<tr>
+		<td>学修サービス</td>
+		<td>4</td>
+		<td>5</td>
+		<td>30</td>
+		<td>留学をしようと思ったきっかけを教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td colspan="2">日本人学生</td>
+		<td colspan="2">Why did you decide to study abroad?（Maximum 1250 words）</td>
+	</tr>
+	<tr>
+		<td>学修サービス</td>
+		<td>4</td>
+		<td>6</td>
+		<td>31</td>
+		<td>留学を考える上で何か障壁はありますか。（複数選択可）</td>
+		<td>複数選択+自由記述</td>
+		<td>全員</td>
+		<td>経済的理由<br>語学に自信がない<br>今の研究・授業を優先する<br>在学年数が延びることが不安<br>海外生活が不安<br>興味がない<br>情報がない<br>その他（自由記述）</td>
+		<td>Is there anything that prevents you from studying abroad? (multiple selections allowed)</td>
+		<td>Financial reasons.<br>I am not confident with my foreign language skills.<br>I want to prioritize my current studies and research.<br>I am concerned about extending the duration of my enrollment at the university.<br>I am worried about staying in a foreign country.<br>I am not interested.<br>I do not have enough information.<br>Other (please specify)</td>
+	</tr>
+	<tr>
+		<td>学修サービス</td>
+		<td>4</td>
+		<td>7</td>
+		<td>32</td>
+		<td>留学を考える上での障壁を取り除くために、どのような新しい制度、授業科目、サービスがあれば良いか教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Is there anything that prevents you from studying abroad? If so, please let us know what kind of new systems, courses, or services are needed to remove these barriers? (Maximum 1250 words)</td>
+	</tr>
+	<tr>
+		<td>学修サービス</td>
+		<td>4</td>
+		<td>8</td>
+		<td>33</td>
+		<td>東工大の現在の留学制度について意見があれば教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please let us know if you have any opinions regarding Tokyo Tech’s studying abroad programs. (Maximum 1250 words)</td>
+	</tr>
+	<tr>
+		<td>学修サービス</td>
+		<td>4</td>
+		<td>9</td>
+		<td>34</td>
+		<td>起業について、ご自身の考えに当てはまるものを教えてください。</td>
+		<td>選択+自由記述</td>
+		<td>全員</td>
+		<td>とてもしたい（する予定である）<br>したい<br>機会があればしたい<br>あまりしたくない<br>その他（自由記述）</td>
+		<td>Please tell us what you think about entrepreneurship as it applies to you.</td>
+		<td>Very much want to (plan to)<br>Want to<br>Want to if given the opportunity<br>Do not want to<br>Other(please describe)</td>
+	</tr>
+	<tr>
+		<td>学修サービス</td>
+		<td>4</td>
+		<td>10</td>
+		<td>35</td>
+		<td>起業に関する東工大の取り組みについて、知っているものを教えてください。（複数選択可）</td>
+		<td>複数選択+自由記述</td>
+		<td>全員</td>
+		<td>リーダーシップ教育院（ToTAL）<br>実践型アントレプレナー人材育成プログラム（PEECs）<br>イノベーションデザイン機構のイベント（ Go Startup、STARTech、ビジネスコンテスト、 INDEST）<br>東工大が主催の起業関連のイベント<br>その他（自由記述）</td>
+		<td>What do you know about Tokyo Tech’s efforts regarding entrepreneurship? (multiple selections allowed)</td>
+		<td>Tokyo Tech Academy for Leadership (ToTAL)<br>Practical-Based Entrepreneurship Education Courses (PEECs)<br>Innovation Design Platform events (Go Startup, STARTech, Business Contest, INDEST)<br>Tokyo Tech-sponsored entrepreneurship events<br>Others (please describe)</td>
+	</tr>
+	<tr>
+		<td>食事</td>
+		<td>5</td>
+		<td>1</td>
+		<td>36</td>
+		<td>平日の昼食は主にどこを利用していますか。（複数選択可）</td>
+		<td>選択(マトリクス)</td>
+		<td>全員</td>
+		<td>行<br>つばめテラス（生協）<br>第二食堂（生協）<br>すずかけ台食堂（生協）<br>Kitchen MOTOTECH<br>生協購買書籍店・フードショップ・西5号館<br>生協BENTO<br>キッチンカー<br>大岡山キャンパス内のセブンイレブン<br>学外のスーパー、コンビニ<br>学外の飲食施設<br>持参したお弁当等<br>その他<br><br>列<br>週に4日以上<br>週に2～3日<br>週に1日<br>月に1～2日<br>利用しない</td>
+		<td>Where do you normally get lunch on weekdays?</td>
+		<td>Row<br>University Co-op’s Tsubame Terrace<br>University Co-op’s Second Cafeteria<br>University Co-op’s Suzukakedai Cafeteria<br>Kitchen MOTOTECH<br>University Co-op Ookayama Bookstore, University Co-op Food Shop, West Bldg. 5, or Co-op BENTO<br>I use the food trucks.<br>I use the 7-Eleven on Ookayama Campus.<br>I go to off-campus supermarkets or convenience stores.<br>I go to off-campus restaurants.<br>I bring my own lunch.<br>Others<br><br>Column<br>Four or more times a week<br>Two to three days a week<br>Once a week<br>One or two days a month<br>Not at all</td>
+	</tr>
+	<tr>
+		<td>食事</td>
+		<td>5</td>
+		<td>2</td>
+		<td>37</td>
+		<td>平日の昼食をとる際に重視している点を教えてください。（複数選択可）</td>
+		<td>複数選択+自由記述</td>
+		<td>全員</td>
+		<td>価格<br>食事の量<br>おいしさ<br>栄養バランス<br>ハラル・ビーガン食品がある<br>提供までの速さ<br>アクセスの良さ<br>飲食スペースの快適さ<br>特定のメニューを食べたい<br>その他（自由記述）</td>
+		<td>What is the most important factor when deciding what to eat for lunch on weekdays?</td>
+		<td>Price<br>Amount of food<br>Taste<br>Nutritional balance<br>Halal, vegan options<br>Speed<br>Accessibility<br>Comfort of eating space<br>Particular food I wish to eat<br>Others (please describe)</td>
+	</tr>
+	<tr>
+		<td>食事</td>
+		<td>5</td>
+		<td>3</td>
+		<td>38</td>
+		<td>平日の昼食の予算は平均いくらくらいですか。</td>
+		<td>選択</td>
+		<td>全員</td>
+		<td>～500円<br>500円～700円<br>700円～900円<br>900円～</td>
+		<td>What is your budget for lunch on weekdays?</td>
+		<td>Less than 500 yen<br>500 to 700 yen<br>700 to 900 yen<br>More than 900 yen</td>
+	</tr>
+	<tr>
+		<td>食事</td>
+		<td>5</td>
+		<td>4</td>
+		<td>39</td>
+		<td>生協食堂のメニューで増やしてほしいものがあれば教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please let us know if there is anything you would like to see added to the menu at the Co-op cafeterias. (Maximum 1250 words)</td>
+	</tr>
+	<tr>
+		<td>食事</td>
+		<td>5</td>
+		<td>5</td>
+		<td>40</td>
+		<td>学内レストラン（生協食堂含む）・ショップ・キッチンカーについて要望があれば教えてください。（2000字以内）<br>現状ある店舗についての要望は、店舗名を明示してください。</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please let us know if you have any requests for the on-campus restaurants (including the Co-op cafeterias), shops or food trucks. (Maximum 1250 words)<br>If you have requests for existing stores, please indicate the store name.</td>
+	</tr>
+	<tr>
+		<td>施設</td>
+		<td>6</td>
+		<td>1</td>
+		<td>41</td>
+		<td>生協購買部をどの程度利用していますか。</td>
+		<td>選択</td>
+		<td>全員</td>
+		<td>週に4日以上<br>週に2～3日<br>週に1日<br>月に1日<br>ほとんどない</td>
+		<td>How frequently do you use the University Co-op Shops?</td>
+		<td>Four or more times a week<br>Two to three days a week<br>Once a week<br>One or two days a month<br>Not at all</td>
+	</tr>
+	<tr>
+		<td>施設</td>
+		<td>6</td>
+		<td>2</td>
+		<td>42</td>
+		<td>生協購買部に対する要望があれば教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please provide any comments or requests you may have regarding the University Co-op Shops.（Maximum 1250 words）</td>
+	</tr>
+	<tr>
+		<td>施設</td>
+		<td>6</td>
+		<td>3</td>
+		<td>43</td>
+		<td>附属図書館をどの程度利用していますか。</td>
+		<td>選択</td>
+		<td>全員</td>
+		<td>週に4日以上<br>週に2～3日<br>週に1日<br>月に1日<br>ほとんどない</td>
+		<td>How frequently do you use the Institute's libraries?</td>
+		<td>Four or more times a week<br>Two to three days a week<br>Once a week<br>One or two days a month<br>Not at all</td>
+	</tr>
+	<tr>
+		<td>施設</td>
+		<td>6</td>
+		<td>4</td>
+		<td>44</td>
+		<td>附属図書館に対する要望があれば教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please provide any comments or requests you may have regarding the libraries.(Maximum 1250 words)</td>
+	</tr>
+	<tr>
+		<td>施設</td>
+		<td>6</td>
+		<td>5</td>
+		<td>45</td>
+		<td>Taki Plazaをどのような用途で、どれくらいの頻度で利用していますか。（複数選択）</td>
+		<td>選択(マトリクス)</td>
+		<td>全員</td>
+		<td>行<br>教務課、学生支援課の各種手続<br>学生主体のイベント<br>大学主催のイベント<br>サークル、部活動のミーティング<br>友人と集まる場<br>個人のワークスペース<br>休憩場所<br>カフェ利用<br>その他<br><br>列<br>週に3回以上<br>週に1,2回<br>2週間に1回程度<br>1ヶ月に1回程度<br>半年に1回程度<br>利用しない</td>
+		<td>How often and for what purpose do you use Taki Plaza?</td>
+		<td>Row<br>To complete procedures at the Student Division or Student Support Division<br>For student-centered events<br>For Tokyo Tech-sponsored events<br>For extracurricular and club meetings<br>To hang out with friends<br>For use personal workspace<br>Space for relaxation<br>To use a café<br>Other<br><br>Column<br>Three or more times a week<br>Once or twice a week<br>Once every two weeks<br>Once a month<br>Once every six months<br>Never used</td>
+	</tr>
+	<tr>
+		<td>施設</td>
+		<td>6</td>
+		<td>6</td>
+		<td>46</td>
+		<td>Taki Plazaの設備やイベントに対する要望があれば教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please let us know if you have any requests regarding Taki Plaza facilities and events. (Maximum 1250 words)</td>
+	</tr>
+	<tr>
+		<td>施設</td>
+		<td>6</td>
+		<td>7</td>
+		<td>47</td>
+		<td>学生支援の一環として、キャンパス内一部の女子トイレ及び多目的トイレに生理用品の提供が行われています。それについて知っていますか。<br>生理用品の提供については、本学HP「生理用品の提供」（https://www.titech.ac.jp/student-support/students/health/free-sanitarypad）をご覧ください。</td>
+		<td>選択</td>
+		<td>全員</td>
+		<td>知っている<br>詳しくは知らない<br>全く知らない</td>
+		<td>Did you know that as part of Tokyo Tech’s student support services, free sanitary pads are offered in some female restrooms and multipurpose toilets across our campuses?<br>For more information, please visit the following page “Sanitary Pads for All Who Need Them” of the Tokyo Tech website : https://www.titech.ac.jp/english/student-support/students/health/free-sanitarypad</td>
+		<td>Yes, I know it well.<br>Yes, I know about it but not well.<br>No, I did not know about it.</td>
+	</tr>
+	<tr>
+		<td>施設</td>
+		<td>6</td>
+		<td>8</td>
+		<td>48</td>
+		<td>現在生理用品が設置されている場所以外で、設置してほしい場所があれば教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please let us know if there are additional locations where you would like free pads to be offered. (Maximum 1250 words)</td>
+	</tr>
+	<tr>
+		<td>施設</td>
+		<td>6</td>
+		<td>9</td>
+		<td>49</td>
+		<td>学内の施設に関しての意見があれば教えてください。（2000字以内）<br>例：講義施設、体育館、グラウンド、リフレッシュスペース等</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please let us know if you have any opinions regarding on-campus facilities. (Maximum 1250 words)<br>Examples: Lecture rooms, gymnasiums, sports grounds, relaxation spaces</td>
+	</tr>
+	<tr>
+		<td>大学</td>
+		<td>7</td>
+		<td>1</td>
+		<td>50</td>
+		<td>授業や学内行事など大学の発信する情報を得るために主に利用するものを選択してください。（複数選択可）</td>
+		<td>複数選択</td>
+		<td>全員</td>
+		<td>大学のホームページ<br>大学の掲示板<br>教務Webシステム<br>電子掲示板（ディスプレイ）<br>東工大Slack<br>東工大公式SNSアカウント（Facebook, X（旧Twitter）, LinkedIn等）<br>X（旧Twitter）<br>Instagram<br>その他SNS<br>友人<br>教員<br>その他</td>
+		<td>How do you acquire information regarding courses and events at Tokyo Tech?</td>
+		<td>Tokyo Tech website<br>Campus bulletin boards<br>Web System for Students and Faculty<br>Electronic bulletin board<br>Tokyo Tech Slack<br>Tokyo Tech official SNSs (Facebook, X [formerly Twitter] , LinkedIn, etc.)<br>X (former Twitter)<br>Instagram<br>Other SNSs<br>Friends<br>Faculty member<br>Other(please describe)</td>
+	</tr>
+	<tr>
+		<td>大学</td>
+		<td>7</td>
+		<td>2</td>
+		<td>51</td>
+		<td>東工大ポータル（T2SCHOLA,教務Web,東工大メールシステム,ポートフォリオなど）、Slack、BoxやOCWについて何か意見があれば教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please let us know if you have any opinions regarding the Tokyo Tech Portal (T2SCHOLA, Web System for Students and Faculty, Tokyo Tech Mail System, Learning Portfolio, etc.), Slack, Box, or OCW. (Maximum 1250 words)</td>
+	</tr>
+	<tr>
+		<td>大学</td>
+		<td>7</td>
+		<td>3</td>
+		<td>52</td>
+		<td>奨学金・経済的支援について、受給したことがあるものを教えてください。（複数選択可）</td>
+		<td>複数選択+自由記述</td>
+		<td>全員</td>
+		<td>Tokyo Tech SPRING<br>Tokyo Tech BOOST<br>教育プログラムによる経済支援（卓越教育院等）<br>その他学内の奨学金・経済的支援<br>日本学生支援機構奨学金（JASSO）<br>日本学術振興会による制度・プログラム<br>民間財団等奨学金<br>その他（自由記述）</td>
+		<td>Please indicate which scholarships/financial aid you have received. (multiple selections allowed)</td>
+		<td>Tokyo Tech SPRING<br>Tokyo Tech BOOST<br>Financial aid through educational programs (Tokyo Tech Academy, etc.)<br>Other on-campus scholarships/financial aid<br>Japan Student Services Organization scholarship loans (JASSO)<br>Japan Society for the Promotion of Science programs<br>Privately funded scholarships<br>Others (please describe)</td>
+	</tr>
+	<tr>
+		<td>大学</td>
+		<td>7</td>
+		<td>4</td>
+		<td>53</td>
+		<td>学生生活サービス（キャリア支援、奨学金、保険、サークル活動への支援など）について何か意見や要望があれば教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please let us know if you have any opinions or requests regarding student life services (career support, scholarships, insurance, aid for extracurricular activities, etc.). (Maximum 1250 words）</td>
+	</tr>
+	<tr>
+		<td>大学</td>
+		<td>7</td>
+		<td>5</td>
+		<td>54</td>
+		<td>教員・職員の対応に関して意見があれば教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please provide any comments you may have regarding the services provided by faculty and administrative staff .(Maximum 1250 words)</td>
+	</tr>
+	<tr>
+		<td>大学</td>
+		<td>7</td>
+		<td>6</td>
+		<td>55</td>
+		<td>ハラスメント（アルコール・セクシャル・アカデミック・パワーハラスメント・その他のハラスメント）を見聞きしたことがありますか。</td>
+		<td>選択</td>
+		<td>全員</td>
+		<td>現在見ている<br>以前に見たことがある<br>見たことがない</td>
+		<td>Have you ever witnessed any form of harassment at the Institute (sexual, academic, power, alcohol-related, etc.)?</td>
+		<td>Yes, currently there is a case(s) of harassment to which I have been witness.<br>Yes, I have in the past.<br>No, I have not.</td>
+	</tr>
+	<tr>
+		<td>大学</td>
+		<td>7</td>
+		<td>7</td>
+		<td>56</td>
+		<td>どのようなハラスメントを見聞きしたことがありますか。（複数選択可）</td>
+		<td>複数選択</td>
+		<td>全員</td>
+		<td>飲酒の強要等<br>性的で不快な言動<br>教育研究上の権力を利用した不適切な言動<br>立場の優位性を背景にした不適切な言動<br>国籍人種に関する不適切な言動<br>その他の不適切な言動</td>
+		<td>What kinds of harassment have you heard of or witnessed? (multiple selections allowed)</td>
+		<td>Forced drinking<br>Sexually offensive language or behavior<br>Inappropriate language or behavior using educational or research authority<br>Inappropriate language or behavior based on superiority of position<br>Inappropriate language or behavior regarding nationality or race<br>Other inappropriate language or behavior (please specify)</td>
+	</tr>
+	<tr>
+		<td>大学</td>
+		<td>7</td>
+		<td>8</td>
+		<td>57</td>
+		<td>ハラスメント相談窓口について要望があれば教えてください。（2000字以内）<br>ハラスメント相談窓口については、本学HP「ハラスメント対策」（[https://www.titech.ac.jp/0/students/counseling/harassment]）を参照してください。</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please let us know if you have any requests regarding the Harassment Consultation Service. (Maximum 1250 words)<br>For more information about the Harassment Consultation Service, please visit the “Harassment Policy” page of the Tokyo Tech website : https://www.titech.ac.jp/english/0/students/counseling/harassment</td>
+	</tr>
+	<tr>
+		<td>大学</td>
+		<td>7</td>
+		<td>9</td>
+		<td>58</td>
+		<td>現在公欠制度が適用されない事由以外で、公欠制度を利用したい事由はありますか。（2000字以内）<br>公欠制度については、「公欠制度について」（[https://www.titech.ac.jp/student/pdf/certificates-submitting-forms-current-koketsu-seido.pdf]）をご覧ください。</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Are there any other reasons that you would like to use the authorized absence system other than the current valid reasons? (Maximum 1250 words)<br>See “Agreement on Authorized Absence” for more information.<br>(https://www.titech.ac.jp/english/student/pdf/177-agreement-on-authorized-absences.pdf)</td>
+	</tr>
+	<tr>
+		<td>大学</td>
+		<td>7</td>
+		<td>10</td>
+		<td>59</td>
+		<td>公欠制度について何か意見があれば教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please let us know if you have any opinions regarding the authorized absence system. (Maximum 1250 words)</td>
+	</tr>
+	<tr>
+		<td>大学</td>
+		<td>7</td>
+		<td>11</td>
+		<td>60</td>
+		<td>昨年の学内の防災訓練に参加しましたか。</td>
+		<td>複数選択</td>
+		<td>全員</td>
+		<td>安否確認メールに対応した<br>総合訓練(自衛防災隊編成訓練 情報伝達訓練 など)に参加した<br>個別訓練(救命救護訓練 通報訓練 など)に参加した<br>在学していなかった<br>参加しなかった</td>
+		<td>Did you participate in the disaster drill last year?</td>
+		<td>I responded to the safety confirmation mail.<br>I participated in the comprehensive drill (formation of self-preparedness disaster response teams, information communication training, etc.)<br>I participated in the optional drills (first-aid drills, reporting drills, etc.)<br>I was not enrolled at Tokyo Tech at that time.<br>I did not participate.</td>
+	</tr>
+	<tr>
+		<td>大学</td>
+		<td>7</td>
+		<td>12</td>
+		<td>61</td>
+		<td>防災訓練に参加しなかった理由を教えてください。（複数選択可）</td>
+		<td>複数選択</td>
+		<td>全員</td>
+		<td>知らなかったため<br>その時間に学内にいなかったため<br>意義が感じられなかったため<br>何をすればよいのかわからなかったため<br>周囲が参加していなかったため<br>教員からの指示がなかったため<br>その他</td>
+		<td>Please tell us why you did not participate in the disaster drill. (multiple selections allowed)</td>
+		<td>Did not know about them<br>Was not on campus at the time<br>Did not feel the need to<br>Did not know what to do<br>No one around me was participating<br>Was not instructed by an instructor<br>Other</td>
+	</tr>
+	<tr>
+		<td>大学</td>
+		<td>7</td>
+		<td>13</td>
+		<td>62</td>
+		<td>多くの学生が、防災・避難訓練に参加するためにはどのような施策等を行えば良いか教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please tell us what measures, etc. should be taken to encourage more students to participate in disaster and evacuation drills. (Maximum 1250 words)</td>
+	</tr>
+	<tr>
+		<td>その他</td>
+		<td>8</td>
+		<td>1</td>
+		<td>63</td>
+		<td>現行の東工大の制度のうち、統合後も変えないで欲しい制度は何かありますか、またそれはなぜですか。（2000字以内）<br>例：学修カリキュラム、系・研究室所属システム、大学院入試システム（A,B日程など）、T2SCHOLA等学修システム、留学制度など</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Among currently available systems at Tokyo Tech, please name anything you want to be maintained even after the integration, and explain why.<br>Example: Curriculum, department/laboratory affiliation, graduate admission system (A/B schedule, etc.), learning management system (T2SCHOLA, etc.,), study-abroad programs, etc.</td>
+	</tr>
+	<tr>
+		<td>その他</td>
+		<td>8</td>
+		<td>2</td>
+		<td>64</td>
+		<td>現行の東工大の制度のうち、統合を機に変わって欲しい制度は何かありますか、またどう変わって欲しいですか。（2000字以内）<br>例：学修カリキュラム、系・研究室所属システム、大学院入試システム（A,B日程など）、T2SCHOLA等学修システム、留学制度など</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Among currently available systems at Tokyo Tech, name anything you want to be improved through integration, and explain how you want to be changed.<br>Example: Curriculum, department/laboratory affiliation, graduate admission system (A/B schedule, etc.), learning management system (T2SCHOLA, etc.,), study-abroad programs, etc.</td>
+	</tr>
+	<tr>
+		<td>その他</td>
+		<td>8</td>
+		<td>3</td>
+		<td>65</td>
+		<td>生成AIを利用していますか。生成AIを利用している場合、利用目的をおしえてください。（複数選択可）</td>
+		<td>複数選択+自由記述</td>
+		<td>全員</td>
+		<td>生成AIを利用していない。<br>学修のため（課題を解くための補助など）<br>研究のため（論文を読む際の補助など）<br>課外活動のため（サークル、部活など）<br>趣味のため<br>そのほかの目的（自由記述）</td>
+		<td>Do you use generative AI, and if yes, for what purpose? (multiple selections allowed)</td>
+		<td>I do not use generative AI.<br>I use it for education (assistance in completing assignments, etc.).<br>I use it for research (assistance in reading papers, etc.).<br>I use it for extracurricular activities (clubs, etc.).<br>I use it as a hobby.<br>I use it for other purposes. (please specify)</td>
+	</tr>
+	<tr>
+		<td>その他</td>
+		<td>8</td>
+		<td>4</td>
+		<td>66</td>
+		<td>生成AIの具体的な使い方についておしえてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please tell us about your specific use(s) of generative AI. (Maximum 1250 words)</td>
+	</tr>
+	<tr>
+		<td>その他</td>
+		<td>8</td>
+		<td>5</td>
+		<td>67</td>
+		<td>生成AIを利用するとき、生成AIから得られる情報をどのくらい信用していますか。</td>
+		<td>選択</td>
+		<td>全員</td>
+		<td>信用している<br>少し信用している<br>どちらとも言えない<br>あまり信用していない<br>全く信用していない</td>
+		<td>When you use generative AI, how much do you trust the information it generates?</td>
+		<td>I trust it completely.<br>I trust it to a certain degree.<br>Neutral<br>I do not trust it that much.<br>I do not trust it at all.</td>
+	</tr>
+	<tr>
+		<td>全体</td>
+		<td>9</td>
+		<td>1</td>
+		<td>68</td>
+		<td>学生間の交流を推進するために、どのような取り組み（イベントや企画、制度）があれば良いか教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please tell us what kinds of initiatives (events, projects, systems) you would like to see to promote interaction among students. (Maximum 1250 words)</td>
+	</tr>
+	<tr>
+		<td>全体</td>
+		<td>9</td>
+		<td>2</td>
+		<td>69</td>
+		<td>ダイバーシティ・エクイティ&amp;インクルージョン、ダイバーシティ&amp;インクルージョン（DE&amp;I、D&amp;I）の観点から全ての学生が過ごしやすくするために、改善すべき点があれば教えてください。（2000字以内）<br>ダイバーシティ＆インクルージョン（D&amp;I）については、本学HP「東工大ダイバーシティ＆インクルージョン」（[https://www.titech.ac.jp/diversity-inclusion]）を参照してください。</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">What improvements, if any, are needed to make it easier for all students in terms of diversity, equity and inclusion, diversity and inclusion (DE&amp;I, D&amp;I)? (Maximum 1250 words)<br>For more information on diversity and inclusion, please visit the page “Diversity and Inclusion at Tokyo Tech” of the Tokyo Tech website : https://www.titech.ac.jp/english/diversity-inclusion</td>
+	</tr>
+	<tr>
+		<td>全体</td>
+		<td>9</td>
+		<td>3</td>
+		<td>70</td>
+		<td>ほしいと思う制度、サービス、施設などがあれば教えてください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Tell us about any systems, services or facilities you would like to see added.(Maximum 1250 words)</td>
+	</tr>
+	<tr>
+		<td>全体</td>
+		<td>9</td>
+		<td>4</td>
+		<td>71</td>
+		<td>最後に全体を通して意見があれば自由に記入してください。（2000字以内）</td>
+		<td>自由記述<br>2000字</td>
+		<td>全員</td>
+		<td></td>
+		<td colspan="2">Please provide any comments regarding your overall experience at the Institute. (Maximum 1250 words)</td>
+	</tr>
+</table>
+
+  </main>
+
+  <div id="footer"></div>
+</body>
+</html>

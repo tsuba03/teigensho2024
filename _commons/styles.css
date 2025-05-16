@@ -1,0 +1,144 @@
+body { 
+  text-indent:5pt; 
+  text-align:justify; 
+  line-height:125%; 
+  widows:0; 
+  orphans:0; 
+  font-family: 'Noto Sans JP', sans-serif; 
+  font-size:10.5pt;
+ }
+main {
+  margin: 20px auto; /* 上下40px、左右は中央寄せ */
+  max-width: 800px;
+  padding: 0 1em;
+}
+h1, h2, h3, h4, p { margin:0pt 0pt 1.25pt }
+li { margin-top:0pt; margin-bottom:1.25pt }
+h1 { margin-left:0pt; margin-bottom:1.25pt; text-indent:0pt; text-align:center; page-break-inside:avoid; page-break-after:avoid; line-height:150%; widows:0; orphans:0; font-size:16pt; font-weight:normal; color:#000000 }
+h2 { margin-top:8pt; margin-left:42.55pt; margin-bottom:1.25pt; text-indent:-42.55pt; text-align:left; page-break-inside:avoid; page-break-after:avoid; line-height:125%; widows:0; orphans:0; font-size:14pt; font-weight:normal; color:#000000; text-decoration:underline; }
+h3 { margin-top:8pt; margin-bottom:4pt; text-indent:5pt; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:125%; widows:0; orphans:0; font-size:12pt; font-weight:normal; color:#000000 }
+h4 { margin-top:4pt; margin-bottom:2pt; text-indent:5pt; text-align:justify; page-break-inside:avoid; page-break-after:avoid; line-height:125%; widows:0; orphans:0; font-size:10.5pt; font-weight:normal; color:#000000 }
+p {
+  margin-bottom:4.5pt;
+  text-indent:10.5pt;
+}
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0;
+}
+ul ul{
+  list-style-type: square;
+}
+ul ul ul{
+  list-style-type: circle;
+}
+
+/* 全体のテーブルスタイル */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* テーブルのヘッダー行 */
+thead {
+  background-color: #1c3177;
+  color:#f9f9f9;
+}
+
+thead th {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* テーブルのデータ行 */
+tbody td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+/* 偶数行に背景色を付ける（ストライプ） */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* ホバー時の行のスタイル */
+tbody tr:hover {
+  background-color: #7f96c2;
+  color:#f9f9f9;
+}
+
+/* テーブルの外枠 */
+table {
+  border: 1px solid #999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-dot {
+  list-style:none;
+  margin-left: 20px;
+  padding-left: 0;
+}
+li {
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+figure {
+  text-align: center;
+  margin: 2em 0;
+}
+img {
+  max-width: 80%;
+  height: auto;
+}
+figcaption {
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
+
+.footnote-ref {
+  text-decoration: none;
+  font-size: 0.7em;
+  vertical-align: super;
+}
+
+.footnote-text {
+  font-size: 0.95em;
+  margin-top: 1em;
+  line-height: 1.5;
+}
+
+#footnotes {
+  margin-top: 3em;
+  padding-top: 1em;
+  border-top: 1px solid #ccc;
+}
+
+#footnotes h2 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.qa-block {
+  margin-bottom: 1em;
+  padding-left: 1em;
+}
+
+.qa-block p {
+  margin-bottom: 1em;
+  text-indent: -2em;
+  padding-left: 2em;
+}
+
+.qa-block .label {
+  text-decoration: underline;
+  font-weight: bold;
+  margin-right: 0.5em;
+}

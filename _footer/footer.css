@@ -1,0 +1,35 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+.site-footer {
+    background-color: #ffffff;
+    color: #1c3177;
+    padding: 1em 0;
+    border-top: 3px solid #1c3177;
+  }
+  
+  .footer-container {
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo {
+    height: 70px; /* ロゴサイズは調整可能 */
+    width: auto;        /* 横幅は自動調整 */
+    max-height: 70px;   /* 念のため制限を重ねる */
+    max-width: 100%;    /* 親要素より大きくならないように */
+    object-fit: contain; /* はみ出し防止 */
+    display: block;
+  }
+  
+  .footer-rights {
+    margin: 0;
+    font-size: 0.9em;
+  }
+  

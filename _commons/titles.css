@@ -1,0 +1,120 @@
+ /*generateProposalTitleのためのスタイル設定*/
+.proposal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10pt;
+    border:none;
+  }
+  
+  .proposal-table td {
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: justify;
+  }
+  
+  .proposal-num-cell {
+    width: 10pt;
+    border: 1.5pt solid #1c3177;
+    padding: 0 4.65pt;
+    vertical-align: middle;
+    background-color: #1c3177;
+    color: #ffffff;
+    font-size: 12pt;
+    pointer-events: none;
+  }
+  
+  .proposal-category-cell {
+    width: 100pt;
+    border-right: 1.5pt solid #1c3177;
+    border-left: 1.5pt solid #1c3177;
+    border-top:none;
+    border-bottom: none;
+    padding: 0 4.65pt;
+    vertical-align: middle;
+    font-size: 12pt;
+    pointer-events: none;
+  }
+  
+  .proposal-label-cell {
+    width: 70pt;
+    border: 1.5pt solid #1c3177;
+    padding: 0 4.65pt;
+    vertical-align: middle;
+    background-color: #1c3177;
+    color: #ffffff;
+    font-size: 14pt;
+    pointer-events: none;
+  }
+  
+  .proposal-title-cell {
+    width: auto;
+    border-left: 1.5pt solid #1c3177;
+    border-bottom: 1.5pt solid #1c3177;
+    border-right: none;
+    border-top: none;
+    padding: 0 4.65pt;
+    padding-right: 5.4pt;
+    vertical-align: middle;
+    font-size: 16pt;
+    line-height: 1;
+    pointer-events: none;
+  }
+  
+  .proposal-p {
+    margin-bottom: 4.5pt;
+    text-indent: 0;
+    widows: 2;
+    orphans: 2;
+    text-align: center;
+  }
+
+  /* generateHeadlineのためのスタイル */
+table.a33 {
+    width: 110pt;
+    border-collapse: collapse;
+    margin-left: 0;
+    margin-bottom: 10pt;
+    border: none;
+  }
+  
+  table.a33 td {
+    padding: 0;
+    vertical-align: top;
+  }
+  
+  .cell-1 {
+    width: 20pt;
+    height: 20pt;
+    border: 1.5pt solid #1c3177;
+    background-color: #1c3177;
+    text-align: center;
+    vertical-align: middle;
+    pointer-events: none;
+  }
+  
+  .cell-1 .cell-content {
+    color: #ffffff;
+    font-size: 12pt;
+    pointer-events: none;
+  }
+  
+  .cell-2 {
+    width: auto;
+    border-left: 1.5pt solid #1c3177;
+    border-bottom: 1.5pt solid #1c3177;
+    border-top: none;
+    border-right: none;
+    vertical-align: bottom;
+    text-align: center;
+    pointer-events: none;
+  }
+  
+  .cell-2 .cell-content {
+    font-weight: bold;
+    font-size: 12pt;
+    pointer-events: none;
+  }
+
+  
