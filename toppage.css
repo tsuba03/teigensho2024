@@ -1,0 +1,93 @@
+.greeting-box {
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 20px 30px;
+  background-color: #f9f9f9;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.greeting-box h3 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.greeting-box p {
+  line-height: 1.7;
+  font-size: 1em;
+}
+
+.greeting-name {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.thanks-box {
+  border: 2px solid #7f96c2;
+  border-radius: 12px;
+  padding: 20px 30px;
+  background-color: #f9f9f9;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.thanks-box h3 {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.thanks-box p {
+  line-height: 1.7;
+  font-size: 0.9em;
+}
+.thanks-box ul {
+  list-style: none;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+.proposal-box {
+  border: 2px solid #1c3177;
+  padding: 20px 30px;
+  background-color: #f9f9f9;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.proposal-box ul {
+  list-style: none;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 10px;
+}
+
+.custom-button {
+  display: inline-block;
+  background-color: #1c3177;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #7f96c2;
+}
