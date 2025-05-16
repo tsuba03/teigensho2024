@@ -18,7 +18,19 @@
 
   <main class="content">
     <h1>設問一覧</h1>
-    <table>
+    <table class="fix_table">
+		<colgroup>
+            <col class="col_num">
+            <col class="col_num">
+            <col class="col_num">
+            <col class="col_num">
+            <col class="col_question">
+            <col>
+            <col>
+            <col class="col_ans">
+            <col class="col_question">
+            <col class="col_ans">
+        </colgroup>
 	<tr>
 		<td>ジャンル名</td>
 		<td>ジャンルNo</td>
@@ -27,9 +39,9 @@
 		<td>質問内容</td>
 		<td>回答方式</td>
 		<td>回答者</td>
-		<td>選択肢内容</td>
+		<td style="text-align: center;">選択肢内容</td>
 		<td>質問内容（英語）</td>
-		<td>選択肢内容（英語）</td>
+		<td style="text-align: center;">選択肢内容（英語）</td>
 	</tr>
 	<tr>
 		<td>基本</td>
@@ -380,7 +392,8 @@
 		<td>30</td>
 		<td>留学をしようと思ったきっかけを教えてください。（2000字以内）</td>
 		<td>自由記述<br>2000字</td>
-		<td colspan="2">日本人学生</td>
+		<td>日本人学生</td>
+		<td></td>
 		<td colspan="2">Why did you decide to study abroad?（Maximum 1250 words）</td>
 	</tr>
 	<tr>

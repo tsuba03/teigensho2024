@@ -1,5 +1,31 @@
 .content {
-  margin: 20px 40px; /* 上下40px、左右は中央寄せ */
-  max-width: none;
+  margin: 20px auto; /* 上下40px、左右は中央寄せ */
+  max-width: 100vw;
   padding: 0 1em;
+}
+
+.fix_table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+.col_num{
+  width: 3%;
+}
+
+.col_question{
+  width: 25%;
+}
+
+.col_ans{
+  width:15%;
+  text-align: left;
+}
+
+td:nth-child(8) {
+  text-align: left;
+}
+
+td:nth-child(10) {
+  text-align: left;
 }
